@@ -1,2 +1,4 @@
 # filmsdb
-Explore the films database using SQLite. 
+Explore the films sample database using SQLite. 
+
+## explore.txt

@@ -20,8 +20,11 @@ SELECT *
 FROM films
 WHERE language='Spanish' AND release_year> 2000 AND release_year <2010;
 
-—Lets get more specific… 
--- Get the title and release year for films released in the 90s, filters the records to only include French or Spanish language films, and only return films that took in more than $2M gross.
+/* Lets get more specific… 
+Get the title and release year for films released in the 90s, 
+filters the records to only include French or Spanish language films, 
+and only return films that took in more than $2M gross. */
+
 SELECT title, release_year
 FROM films
 WHERE (release_year >= 1990 AND release_year < 2000) AND (language= 'French' OR language= 'Spanish')

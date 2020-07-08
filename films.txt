@@ -53,11 +53,6 @@ SELECT title, certification
 FROM films
 WHERE certification IN ('R', 'NC-17')
 
---Get the names of people who are still alive
-SELECT name
-FROM people
-WHERE deathdate IS NULL;
-
 --Get the title of every film which doesn't have a budget associated with it.
 SELECT title 
 FROM films
@@ -67,21 +62,6 @@ WHERE budget IS NULL;
 SELECT COUNT(*)
 FROM films
 WHERE language IS NULL;
-
---Get the names of all people whose names begin with 'B'.
-SELECT name
-FROM people
-WHERE name LIKE 'B%';
-
---Get the names of people whose names have 'r' as the second letter.
-SELECT name
-FROM people
-WHERE name LIKE '_r%';
-
---Get the names of people whose names don't start with A
-SELECT name
-FROM people
-WHERE name NOT LIKE 'A%';
 
 --total duration of all films.
 SELECT SUM(duration)
@@ -146,10 +126,6 @@ FROM films;
 --average duration in hours for all films, aliased as avg_duration_hours
 SELECT AVG(duration)/60.0 AS avg_duration_hours
 FROM films;
-
--- percentage of people who are no longer alive
-SELECT COUNT(deathdate)*100.0 /COUNT(*) AS percentage_dead
-FROM people;
 
 --the number of years between the newest film and oldest film.
 SELECT MAX(release_year)- MIN(release_year) AS difference

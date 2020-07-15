@@ -1,9 +1,8 @@
-# filmsdb
+# filmsdb repo
 Explore the films sample database using SQLite. 
 
 ## films.txt
 
-Explores the films table, looking for patterns in the data. 
 
 - 90's movie info 
 - Average duration of movies
@@ -16,6 +15,3 @@ etc.
 
 ## people.txt
 
-Explores the films table, looking for patterns in the data. 
-
-- 

@@ -20,14 +20,14 @@ FROM films;
 SELECT MAX(duration)
 FROM films;
 
-/* Get the title and duration in hours for all films. 
+/* title and duration in hours for all films. 
 (duration is in minutes, so divide by 60.0 to get the duration in hours. */
 SELECT 
   title, 
   (duration/60.0) AS duration_hours
 FROM films;
 
---average duration in hours for all films, aliased as avg_duration_hours
+--average duration in hours for all films
 SELECT 
   AVG(duration)/60.0 AS avg_duration_hours
 FROM films;

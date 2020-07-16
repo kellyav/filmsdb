@@ -35,11 +35,13 @@ SELECT MIN(gross)
 FROM films
 WHERE release_year = 1994;
 
-—amount grossed by the best performing film between 2000 and 2012, inclusive
+—-amount grossed by the best performing film between 2000 and 2012, inclusive
 SELECT MAX(gross)
 FROM films
 WHERE release_year BETWEEN 2000 and 2012;
 
 --title and net profit (the amount a film grossed, minus its budget) for all films. 
-SELECT title, (gross-budget) AS net_profit
+SELECT 
+  title, 
+  (gross-budget) AS net_profit
 FROM films;

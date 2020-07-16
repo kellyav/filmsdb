@@ -24,7 +24,7 @@ filters the records to only include French or Spanish language films,
 and only return films that took in more than $2M gross.
 
 - title and release year of all Spanish or French language films that: 
-were released between 1990 and 2000 (inclusive), and with budgets over $100 million
+were released between 1990 and 2000, and with budgets over $100 million
 
 ### revenue
 Examples of questions explored in this multi-facted sql query:
@@ -41,7 +41,6 @@ Examples of questions explored in this multi-facted sql query:
 - the title and release year of all films released in 1990 or 2000 that were longer than two hours.
 
 - title and duration in hours for all films. 
-(duration is in minutes, so divide by 60.0 to get the duration in hours.
 
 - average duration in hours for all films
 

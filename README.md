@@ -1,8 +1,7 @@
 # filmsdb repo
 Explore the films sample database using SQLite. 
 
-## films.txt
-
+## films.sql
 
 - 90's movie info 
 - Average duration of movies
@@ -12,6 +11,4 @@ Explore the films sample database using SQLite.
 - Number of years between newest and oldest film
 
 etc. 
-
-## people.txt
 

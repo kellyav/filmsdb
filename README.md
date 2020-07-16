@@ -1,7 +1,7 @@
 # filmsdb repo
 Explore the films sample database using SQLite. 
 
-## films.sql
+## Details explored
 
 - 90's movie info 
 - Average duration of movies
